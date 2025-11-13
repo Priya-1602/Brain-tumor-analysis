@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brain Tumor Analysis</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script defer src="/static/home.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧠</text></svg>">
+    <meta name="description" content="AI-powered brain tumor detection using Vision Transformers" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="header-nav">
+            <div class="logo"><a href="/">🧠 Brain Tumor Analysis</a></div>
+            <div class="nav-links">
+                <a href="/analysis">Analysis</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Brain Tumor Detection</h1>
+                <p class="hero-description">AI-powered analysis of brain MRI scans using advanced Vision Transformer technology to detect and classify tumors with precision.</p>
+            </div>
+        </section>
+
+        <!-- Key Stats -->
+        <section class="stats-section container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Tumor Types Detected</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%+</div>
+                    <div class="stat-label">Detection Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Grad-CAM</div>
+                    <div class="stat-label">Visual Localization</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Instant</div>
+                    <div class="stat-label">Analysis Time</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="main-content container">
+            
+
+            <h2 class="section-title">Brain Tumor Facts</h2>
+
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number">1 Million+</div>
+                    <div class="fact-label">Americans are living with a brain tumor</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">94,390</div>
+                    <div class="fact-label">Americans receive a primary brain tumor diagnosis each year</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">Over 100</div>
+                    <div class="fact-label">Different types of primary brain tumors exist</div>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">Early</div>
+                    <div class="fact-label">Detection significantly improves treatment outcomes</div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="quick-facts-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What types of brain tumors can the AI detect?</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our Vision Transformer model can detect four categories:</p>
+                        <ul>
+                            <li><strong>Glioma:</strong> Primary brain tumors arising from glial cells</li>
+                            <li><strong>Meningioma:</strong> Tumors arising from the meninges</li>
+                            <li><strong>Pituitary:</strong> Tumors in the pituitary gland</li>
+                            <li><strong>No tumor:</strong> Normal brain scans</li>
+                        </ul>
+                        <p>The AI analyzes MRI images and provides a classification with confidence scores for each category.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How does Grad-CAM show tumor location?</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Grad-CAM (Gradient-weighted Class Activation Mapping) creates a visual heatmap overlay on your MRI scan, highlighting the regions that most influenced the AI's diagnosis.</p>
+                        <p>This heatmap shows:</p>
+                        <ul>
+                            <li>Exact areas where the tumor is detected</li>
+                            <li>Brain lobe and hemisphere (frontal, parietal, temporal, or occipital)</li>
+                            <li>Intensity of activation areas</li>
+                        </ul>
+                        <p>The system also provides a bounding box around the most suspicious region and generates a binary mask of the detected areas.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What treatment recommendations are provided?</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Based on the detected tumor type, the system provides evidence-based treatment suggestions:</p>
+                        <ul>
+                            <li><strong>Glioma:</strong> Biopsy for profiling, surgical resection, radiotherapy/temozolomide based on grade and markers</li>
+                            <li><strong>Meningioma:</strong> Surgical resection or stereotactic radiosurgery, with 3-6 month MRI follow-ups</li>
+                            <li><strong>Pituitary:</strong> Transsphenoidal resection, endocrinology management, and hormone follow-up</li>
+                            <li><strong>No tumor:</strong> No treatment needed - routine follow-up only</li>
+                        </ul>
+                        <p><em>Note: These are general recommendations. Always consult healthcare professionals for personalized treatment plans.</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Ready to Analyze?</h3>
+                <p>Upload a brain MRI scan to get started with AI-powered tumor detection.</p>
+                <a href="/analysis" class="cta-button">Start Analysis</a>
+            </div>
+            
+            <h2 class="section-title">How It Works</h2>
+            <section class="how-it-works container">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Upload MRI</h3>
+                        <p>Provide a brain MRI slice image in JPG/PNG format. Your file remains on your device during analysis.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>AI Classification</h3>
+                        <p>Our Vision Transformer (ViT‑B/16) predicts tumor type with calibrated confidence and localizes the hotspot.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Report & Guidance</h3>
+                        <p>Download a PDF report including risk level, Grad‑CAM visualization, and concise treatment guidance.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <h2 class="section-title">Privacy & Safety</h2>
+            <section class="container">
+                <ul>
+                    <li>Files are processed on this app; no public sharing is performed.</li>
+                    <li>Reports are for clinical decision support and not a diagnosis.</li>
+                    <li>Always consult qualified healthcare professionals for treatment decisions.</li>
+                </ul>
+            </section>
+
+            <h2 class="section-title">Sample Report</h2>
+            <section class="container">
+                <p>See the complete workflow by running an analysis and downloading the patient‑friendly PDF report from the results page.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Brain Tumor Analysis</h4>
+                    <p>AI-powered diagnostic tool using Vision Transformers and Grad-CAM for precise brain tumor detection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="/analysis">Analysis</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Disclaimer</h4>
+                    <p>This tool provides decision support only and is not a medical diagnosis. Always consult healthcare professionals.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brain Tumor Analysis. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
